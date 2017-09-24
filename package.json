@@ -1,0 +1,26 @@
+{
+  "name": "react-trio-layout",
+  "version": "0.1.0",
+  "description": "React component for layout deviding display.",
+  "author": "alfe(alfe10251@gmail.com/@alfe_below)",
+  "license": "MIT",
+  "dependencies": {
+    "@types/aphrodite": "^0.5.6",
+    "aphrodite": "^1.2.4",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^21.1.0",
+    "@types/node": "^8.0.30",
+    "@types/react": "^16.0.5",
+    "@types/react-dom": "^15.5.4",
+    "react-scripts-ts": "2.7.0"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
+  }
+}
