@@ -1,26 +1,75 @@
 {
   "name": "react-trio-layout",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "React component for layout deviding display.",
-  "author": "alfe(alfe10251@gmail.com/@alfe_below)",
-  "license": "MIT",
-  "dependencies": {
-    "@types/aphrodite": "^0.5.6",
-    "aphrodite": "^1.2.4",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+  "author": {
+    "name": "alfe",
+    "email": "alfe10251@gmail.com",
+    "url": "https://github.com/alfe_below"
   },
-  "devDependencies": {
-    "@types/jest": "^21.1.0",
-    "@types/node": "^8.0.30",
-    "@types/react": "^16.0.5",
-    "@types/react-dom": "^15.5.4",
-    "react-scripts-ts": "2.7.0"
+  "license": "MIT",
+  "main": "lib/Trio.js",
+  "engines": {
+    "node": "6.x || >= 7.x"
   },
   "scripts": {
-    "start": "react-scripts-ts start",
-    "build": "react-scripts-ts build",
-    "test": "react-scripts-ts test --env=jsdom",
-    "eject": "react-scripts-ts eject"
+    "test": "jest",
+    "test:watch": "jest --watch --notify",
+    "build": "babel src --out-dir lib",
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "build-storybook": "build-storybook -s assets -o .out"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:alfe/react-trio-layout.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alfe/react-trio-layout/issues"
+  },
+  "homepage": "https://github.com/alfe/react-trio-layout#readme",
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "react",
+    "react-component",
+    "layout",
+    "slide",
+    "shift"
+  ],
+  "peerDependencies": {
+    "prop-types": ">= 15.x",
+    "react": ">= 15.x"
+  },
+  "dependencies": {
+    "react-style-proptype": "^3.0.0"
+  },
+  "devDependencies": {
+    "@kadira/storybook-deployer": "^1.2.0",
+    "@storybook/addon-actions": "^3.0.1",
+    "@storybook/addon-info": "^3.0.1",
+    "@storybook/react": "^3.0.1",
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-preset-env": "^1.5.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "enzyme": "^2.8.2",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "^7.0.1",
+    "jest": "^20.0.4",
+    "prop-types": "^15.5.10",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-test-renderer": "^15.5.4",
+    "sinon": "^2.3.2"
+  },
+  "storybook-deployer": {
+    "gitUsername": "alfe",
+    "gitEmail": "alfe10251@gmail.com",
+    "commitMessage": "Deploy Storybook to GitHub Pages (by @kadira/storybook-deployer)"
   }
 }
